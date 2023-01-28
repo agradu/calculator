@@ -22,11 +22,12 @@ if len(sys.argv) == 4: # Calculator - argument mode
         print("Result:",result)
     else:
         print("Hey! Did you try to cheat me?")
-        print("The arguments must be like: nuber1(0,1,2...) operand(+-x/) nuber2(0,1,2...).")
+        print("The arguments must be like: number1(0,1,2...) operand(+-x/) number2(0,1,2...).")
     print(joke_list[random.randrange(0,4)])
 
 else: # Calculator - input mode
     print ("Simple calculator - input mode")
+    print("The arguments must be like: number1(0,1,2...) operand(+-x/) number2(0,1,2...).")
     n1 = int(input("First number: "))
     calc = input("Operand: ")
     n2 = int(input("Last number: "))
@@ -34,7 +35,7 @@ else: # Calculator - input mode
         result = n1 + n2
     elif calc == "-":
         result = n1 - n2
-    elif calc == '*':
+    elif calc == 'x':
         result = n1 * n2
     elif calc == "/":
         result = n1 / n2
